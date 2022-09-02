@@ -1,10 +1,10 @@
-lower_value = int(input("1"))
-upper_value = int(input("200))
-print("The prime numbers between 1-200 are:")
-for number in range (lower_value, upper_value + 1):  
-    if number > 1:  
-        for i in range (2, number):  
-            if (number % i) == 0:  
-                break  
-        else:  
-            print (number)
+lower = 1
+upper = 200
+print("Prime numbers between", lower, "and", upper, "are:")
+for num in range(lower, upper + 1):
+   if num > 1:
+       for i in range(2, num):
+           if (num % i) == 0:
+               break
+       else:
+           print(num)
